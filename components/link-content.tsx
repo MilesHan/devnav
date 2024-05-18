@@ -34,7 +34,12 @@ export function LinkItem({ link }: { link: SiteLink }) {
   )
 }
 
-export function LinkContent({ navResources }: { navResources: CategoryWithLinks }) {
+interface LinkContentProps {
+  navResources: CategoryWithLinks;
+}
+
+export const LinkContent: React.FC<LinkContentProps> = ({ navResources }) => {
+// export function LinkContent({ navResources }: { navResources: CategoryWithLinks }) {
   return (
     <div className="w-full pt-4">
       <div className="mx-auto w-full px-4 md:px-6">

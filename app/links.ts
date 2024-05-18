@@ -23,5 +23,5 @@ export default async function getNavLinks() {
   return res;
 }
 
-export type CategoryWithLinks = Prisma.PromiseReturnType<typeof getNavLinks>
-// export type CategoryWithLinks = Prisma.ReturnType<typeof getNavLinks>;
+// 使用 TypeScript 的内置类型来推断 getNavLinks 的返回类型
+export type CategoryWithLinks = Awaited<ReturnType<typeof getNavLinks>>;
