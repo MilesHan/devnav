@@ -23,4 +23,4 @@ export default async function getNavLinks() {
   return res;
 }
 
-export type CategoryWithLinks = Prisma.PromiseReturnType<typeof getNavLinks>
+export type CategoryWithLinks = ReturnType<typeof getNavLinks>;
