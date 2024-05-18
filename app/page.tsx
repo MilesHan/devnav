@@ -8,7 +8,7 @@ export const revalidate = 24 * 60 * 60;
 
 export default async function IndexPage() {
   const navResources: CategoryWithLinks = await getNavLinks();
-  const navItems = navResources.map(n => {
+  const navItems = navResources.map((n: CategoryWithLinks[number]) => {
     return {
       title: n.title,
       icon: n.icon,
