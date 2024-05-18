@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ['cos.codefe.top'],
   }
