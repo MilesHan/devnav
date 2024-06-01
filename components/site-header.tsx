@@ -33,7 +33,7 @@ export async function SiteHeader({ navItems }: SidebarProps) {
               </div>
             </Link>
             <ThemeToggle />
-            {
+            {/* {
               user ? (
                 <UserAccountNav user={user} />
               ) : (
@@ -47,7 +47,7 @@ export async function SiteHeader({ navItems }: SidebarProps) {
                   Login
                 </Link>
               )
-            }
+            } */}
           </nav>
         </div>
       </div>

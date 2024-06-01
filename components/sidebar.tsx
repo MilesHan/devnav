@@ -28,11 +28,18 @@ export function Sidebar({ className, navItems }: SidebarProps) {
         href=""
         className="flex-col items-center justify-center hidden h-16 mx-6 sm:flex"
       >
-        <Image
+        {/* <Image
           src="/logo.png"
           alt=""
           width={200}
           height={60}
+        /> */}
+        <img
+          className="inline-flex mb-2 shrink-0 pt-2"
+          src="/logo.png"
+          width={72}
+          height={72}
+          alt="darwinde.com logo"
         />
       </a>
       <div className="relative z-40 flex flex-col flex-1 w-full h-auto pt-4 overflow-x-hidden overflow-y-auto rounded opacity-100 flex-start">
